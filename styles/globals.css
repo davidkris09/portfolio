@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    overflow-y: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bgImage{
+  background-color: black;
+  background-image: url('../public/wallpaper.jpg');
+}
+
+.david{
+  animation: david 2s 1;
+}
+
+.kristiawan{
+  animation: kristiawan 2.5s 1;
+}
+
+.frontend{
+  width: 420px;
+  white-space: nowrap;
+  border-right: .15em solid white;
+  animation: typing 3.5s steps(40, end) 2s 1 normal both, blink-caret .75s step-end infinite;
+  overflow: hidden;
+}
+
+@keyframes david{
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to { opacity: 1 }
+}
+
+@keyframes kristiawan{
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to { opacity: 1 }
+}
+
+@keyframes typing {
+  from { width: 0;}
+  to { width: 100%;}
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 255, 255); }
+}
